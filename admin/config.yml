@@ -8,12 +8,12 @@ public_folder: "/assets/uploads"
 
 collections:
     - name: "post"
-    label: "পোস্ট"
-    folder: "_posts"
+    label: "Post"
+    folder: "posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-            - {label: "শিরোনাম", name: "title", widget: "string"}
-            - {label: "তারিখ", name: "date", widget: "datetime"}
-            - {label: "ছবি", name: "thumbnail", widget: "image", required: false}
-            - {label: "মূল লেখা", name: "body", widget: "markdown"}
+            - {label: "Title", name: "title", widget: "string"}
+            - {label: "Date", name: "date", widget: "datetime"}
+            - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+            - {label: "Body", name: "body", widget: "markdown"}
