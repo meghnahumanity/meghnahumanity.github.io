@@ -1,0 +1,16 @@
+backend:
+  name: github
+  repo: meghnahumanity/meghnahumanity.github.io
+  branch: main
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+collections:
+    - name: "post"
+    label: "Post"
+    folder: "posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+            - {label: "Title", name: "title", widget: "string"}
+            - {label: "Date", name: "date", widget: "datetime"}
+            - {label: "Body", name: "body", widget: "markdown"}
